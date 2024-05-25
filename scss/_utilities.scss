@@ -1,0 +1,123 @@
+//colors
+$pColor: #4390BC;
+$sColor: #8DBDD8;
+$bgColor: #D8E9F3;
+$whiteColor: #fff;
+$bkColor: #153e53;
+
+//font weight
+$fontWSM: 400;
+$fontWMD: 600;
+$fontWXL: 700;
+
+body, p{
+    font: {
+        size: 16px;
+        weight: $fontWSM;
+    }
+}
+
+p{
+    margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: $fontWXL;
+    margin: 0 0 15px;
+    line-height: 1.2em;
+}
+
+//main width
+$small: 200px;
+$medium: 767px;
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        width: 96%;
+    }
+}
+
+//paddings
+$paddingSM: 10px 0;
+.paddingXL{
+    padding: 60px 0;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        padding: 25px 0;
+    }
+}
+
+//margin
+.m-top{
+    margin-top: 45px;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        padding: 25px 0;
+    }
+}
+
+
+//social area style
+.social_area{
+    ul{
+        text-align: right;
+        li{
+            margin-left: 15px;
+        }
+        a{
+            display: block;
+            background: $sColor;
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            color: $bkColor;
+            text-align: center;
+            padding-top: 8px;
+            border-radius: 30px;
+            i{
+                margin: 0;
+            }
+        }
+        a:hover{
+            background: $bkColor;
+            color: $sColor;
+        }
+    }
+}
+
+//call to action button
+.btn-cta{
+    background: $pColor;
+    color: $whiteColor;
+    display: inline-block;
+    padding: 17px 25px;
+    font-weight: $fontWMD;
+    border-radius: 5px;
+    margin-top: 5px;
+
+    &:hover{
+        background: $bkColor;
+    }
+}
+
+//title & sub-title
+.title{
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 10px;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        font-size: 25px;
+    }
+}
+
+.sub-title{
+    font: {
+        size: 25px;
+        weight: $fontWSM;
+    }
+    line-height: 1em;
+    margin-bottom: 0;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        font-size: 15px;
+    }
+}

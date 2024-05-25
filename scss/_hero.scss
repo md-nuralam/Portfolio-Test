@@ -1,0 +1,35 @@
+#hero_area{
+    padding-top: 60px;
+    background: $bgColor;
+    img{
+        display: block;
+    }
+
+    .about_info{
+        flex-basis: 40%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            font-size: 65px;
+            text-transform: uppercase;
+            line-height: 1em;
+        }
+
+        h5{
+            font: {
+                size: 20px;
+                weight: $fontWMD;
+            }
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+
+    .about_image{
+        flex-basis: 60%;
+        
+    }
+}
